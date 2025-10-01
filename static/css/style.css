@@ -127,12 +127,12 @@ code, pre {
 
 /* Change background color of buttons on hover */
 .nav-item:hover {
-  background-color: #625BA2;
+  background-color: #6FE7B9;
 }
 
 /* Create an active/current tablink class */
 .nav-tabs .nav-link.active {
-  background-color: #6FE7B9;
+  background-color: #003366;
   color:white;
   font-weight: 500;
 }
