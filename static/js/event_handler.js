@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 2:
                         parts[parts.length - 2] = 'bonsai';
                         break;
+                    case 3:
+                        parts[parts.length - 2] = 'kitchen';
+                        break;
                 }
         
                 let newSrc = parts.join('/');
