@@ -105,5 +105,25 @@
 We introduce Universal Beta Splatting (UBS), a unified framework that generalizes 3D Gaussian Splatting to N-dimensional anisotropic Beta kernels for explicit radiance field rendering. Unlike fixed Gaussian primitives, Beta kernels enable controllable dependency modeling across spatial, angular, and temporal dimensions within a single representation. Our unified approach captures complex light transport effects, handles anisotropic view-dependent appearance, and models scene dynamics without requiring auxiliary networks or specific color encodings. UBS maintains backward compatibility by approximating to Gaussian Splatting as a special case, guaranteeing plug-in usability and lower performance bounds. The learned Beta parameters naturally decompose scene properties into interpretable without explicit supervision: spatial (surface vs. texture), angular (diffuse vs. specular), and temporal (static vs. dynamic). Our CUDA-accelerated implementation achieves real-time rendering while consistently outperforming existing methods across static, view-dependent, and dynamic benchmarks, establishing Beta kernels as a scalable universal primitive for radiance field rendering.  </p>
 </div>
 
+
+<section class="section">
+  <h2>Static Reconstruction</h2>
+  <ul class="nav nav-tabs nav-fill nav-justified" id="static-reconstruction">
+      <li class="nav-item">
+        <a class="nav-link active" onclick="staticSceneEvent(0)">Counter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="staticSceneEvent(1)">Bicycle</a>
+      </li>
+  </ul>
+  <div class="b-dics static">
+    <image muted loop src="./static/images/counter/gt.png" alt="GT"></image>
+    <image muted loop src="./static/images/counter/3dgs.png" alt="3DGS"></image>
+    <image muted loop src="./static/images/counter/6dgs.png" alt="6DGS"></image>
+    <image muted loop src="./static/images/counter/ours.png" alt="Ours"></image>
+  </div>
+</section>
+
+
 </body>
 </html>
