@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 5:
                         parts[parts.length - 2] = 'explosion';
                         break;
+                    case 6:
+                        parts[parts.length - 2] = 'bunny';
+                        break;
                 }
         
                 let newSrc = parts.join('/');
