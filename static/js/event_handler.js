@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 1:
                         parts[parts.length - 2] = 'bicycle';
                         break;
+                    case 2:
+                        parts[parts.length - 2] = 'bonsai';
+                        break;
                 }
         
                 let newSrc = parts.join('/');
