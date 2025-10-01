@@ -37,6 +37,12 @@ document.addEventListener('DOMContentLoaded', domReady);
                     case 3:
                         parts[parts.length - 2] = 'kitchen';
                         break;
+                    case 4:
+                        parts[parts.length - 2] = 'smoke';
+                        break;
+                    case 5:
+                        parts[parts.length - 2] = 'explosion';
+                        break;
                 }
         
                 let newSrc = parts.join('/');
