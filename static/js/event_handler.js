@@ -1,19 +1,60 @@
 document.addEventListener('DOMContentLoaded', domReady);
     let dicsStatic = null;
     let dicsDynamic = null;
+    let dicsDemo = null;
         function domReady() {
-            dicsStatic = new Dics({
-                container: document.querySelectorAll('.b-dics')[0],
+            dicsDemo = new Dics({
+                container: document.querySelectorAll('.b-dics.demo')[0],
                 hideTexts: false,
                 textPosition: "bottom"
-
+            });
+            dicsStatic = new Dics({
+                container: document.querySelectorAll('.b-dics.static')[0],
+                hideTexts: false,
+                textPosition: "bottom"
             });
             dicsDynamic = new Dics({
-                container: document.querySelectorAll('.b-dics')[1],
+                container: document.querySelectorAll('.b-dics.dynamic')[0],
                 hideTexts: false,
                 textPosition: "bottom"
-
             });
+        }
+
+        function demoVideoEvent(idx) {
+            let video = document.querySelectorAll('.b-dics.demo')[0].getElementsByTagName('video')[0];
+            let parts = video.children[0].src.split('/');
+            switch (idx) {
+                case 0:
+                    parts[parts.length - 1] = 'dynamic.mp4';
+                    break;
+                case 1:
+                    parts[parts.length - 1] = 'renders.mp4';
+                    break;
+                case 2:
+                    parts[parts.length - 1] = 'temporal.mp4';
+                    break;
+                case 3:
+                    parts[parts.length - 1] = 'angular.mp4';
+                    break;
+                case 4:
+                    parts[parts.length - 1] = 'spatial.mp4';
+                    break;
+            }
+            let newSrc = parts.join('/');
+            let newVideo = video.cloneNode(true);
+            newVideo.children[0].src = newSrc;
+            video.parentNode.replaceChild(newVideo, video);
+
+            let video_list = document.getElementById("demo-video").children;
+            for (let i = 0; i < video_list.length; i++) {
+                if (idx == i) {
+                    video_list[i].children[0].className = "nav-link active"
+                }
+                else {
+                    video_list[i].children[0].className = "nav-link"
+                }
+            }
+            dicsDemo.medias = dicsDemo._getMedias();
         }
 
         function staticSceneEvent(idx) {

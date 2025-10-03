@@ -105,6 +105,31 @@
 We introduce Universal Beta Splatting (UBS), a unified framework that generalizes 3D Gaussian Splatting to N-dimensional anisotropic Beta kernels for explicit radiance field rendering. Unlike fixed Gaussian primitives, Beta kernels enable controllable dependency modeling across spatial, angular, and temporal dimensions within a single representation. Our unified approach captures complex light transport effects, handles anisotropic view-dependent appearance, and models scene dynamics without requiring auxiliary networks or specific color encodings. UBS maintains backward compatibility by approximating to Gaussian Splatting as a special case, guaranteeing plug-in usability and lower performance bounds. The learned Beta parameters naturally decompose scene properties without explicit supervision: spatial (surface vs. texture), angular (diffuse vs. specular), and temporal (static vs. dynamic). Our CUDA-accelerated implementation achieves real-time rendering while consistently outperforming existing methods across static, view-dependent, and dynamic benchmarks, establishing Beta kernels as a scalable universal primitive for radiance field rendering.  </p>
 </div>
 
+<section class="section">
+  <h2>Demo Video</h2>
+  <ul class="nav nav-tabs nav-fill nav-justified" id="demo-video">
+      <li class="nav-item">
+        <a class="nav-link active" onclick="demoVideoEvent(0)">Real-time Rendering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="demoVideoEvent(1)">Different Renders</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="demoVideoEvent(2)">Temporal Control</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="demoVideoEvent(3)">Angular Control</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="demoVideoEvent(4)">Spatial Control</a>
+      </li>
+  </ul>
+  <div class="b-dics demo">
+    <video controls muted loop autoplay style="width: 100%; height: auto; display: block; margin: 0 auto;">
+      <source src="./static/videos/dynamic.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </div>
+</section>
 
 <section class="section">
   <h2>Static Reconstruction</h2>
