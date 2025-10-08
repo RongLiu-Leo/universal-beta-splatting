@@ -16,8 +16,8 @@
 </div>
 
 <div class="affiliations is-size-5">
-*Corresponding author
-<a href="https://usc.edu/" style="color:#990000;"><sup>1</sup>University of Southern California</a>
+*Corresponding author<br>
+<a href="https://usc.edu/" style="color:#990000;"><sup>1</sup>University of Southern California</a><br>
 <a href="https://usa.united-imaging.com/" style="color:#003366;"><sup>2</sup>United Imaging Intelligence</a>
 </div>
 
