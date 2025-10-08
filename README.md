@@ -1,6 +1,10 @@
 <div class="title">
 <h1>Universal Beta Splatting</h1>
 </div>
+
+[![button](https://img.shields.io/badge/Project-Website-blue.svg?style=social&logo=Google-Chrome)](https://rongliu-leo.github.io/universal-beta-splatting/)
+[![button](https://img.shields.io/badge/Paper-arXiv-red.svg?style=social&logo=arXiv)](https://arxiv.org/abs/2510.03312)
+
 <div class="authors is-size-5">
 <a href="https://rongliu-leo.github.io/">Rong Liu<sup>1,2</sup></a>
 <a href="https://sites.google.com/site/gaozhongpai/home">Zhongpai Gao<sup>2</sup>*</a>
