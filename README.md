@@ -29,3 +29,20 @@
     <img src="static/images/teaser.png" alt="Teaser" style="width: 100%; height: auto; display: block; margin: 0 auto;">
     <p>UBS achieves superior angular-spatial rendering of reflective and specular materials in static scenes (left) and maintains high-fidelity temporal-spatial reconstruction in dynamic volumetric scenes (right), avoiding the blurring artifacts of 3DGS and 4DGS.</p>
   </div>
+
+## Abstract
+*We introduce Universal Beta Splatting (UBS), a unified framework that generalizes 3D Gaussian Splatting to N-dimensional anisotropic Beta kernels for explicit radiance field rendering. Unlike fixed Gaussian primitives, Beta kernels enable controllable dependency modeling across spatial, angular, and temporal dimensions within a single representation. Our unified approach captures complex light transport effects, handles anisotropic view-dependent appearance, and models scene dynamics without requiring auxiliary networks or specific color encodings. UBS maintains backward compatibility by approximating to Gaussian Splatting as a special case, guaranteeing plug-in usability and lower performance bounds. The learned Beta parameters naturally decompose scene properties without explicit supervision: spatial (surface vs. texture), angular (diffuse vs. specular), and temporal (static vs. dynamic). Our CUDA-accelerated implementation achieves real-time rendering while consistently outperforming existing methods across static, view-dependent, and dynamic benchmarks, establishing Beta kernels as a scalable universal primitive for radiance field rendering.*
+
+## Citation
+If you find our code or paper helps, please consider giving us a star or citing:
+```bibtex
+@misc{liu2025universalbetasplatting,
+    title={Universal Beta Splatting}, 
+    author={Rong Liu and Zhongpai Gao and Benjamin Planche and Meida Chen and Van Nguyen Nguyen and Meng Zheng and Anwesa Choudhuri and Terrence Chen and Yue Wang and Andrew Feng and Ziyan Wu},
+    year={2025},
+    eprint={2510.03312},
+    archivePrefix={arXiv},
+    primaryClass={cs.GR},
+    url={https://arxiv.org/abs/2510.03312}, 
+}
+```
