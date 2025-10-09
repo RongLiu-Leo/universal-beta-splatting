@@ -39,9 +39,18 @@ Thanks for your interest in our work. If you would like to access the source cod
 ## Demo Video
 See more in our [project website](https://rongliu-leo.github.io/universal-beta-splatting/).
 
-<video src="static/videos/renders.mp4" controls style="width:100%; max-width:1080px; display:block; margin:0 auto;">
+<video src="https://github.com/RongLiu-Leo/universal-beta-splatting/blob/main/static/videos/renders.mp4" controls style="width:100%; max-width:1080px; display:block; margin:0 auto;">
     Your browser does not support the video tag.
 </video>
+
+<video src="https://raw.githubusercontent.com/RongLiu-Leo/universal-beta-splatting/main/static/videos/renders.mp4" controls style="width:100%; max-width:1080px; display:block; margin:0 auto;">
+    Your browser does not support the video tag.
+</video>
+
+[Watch Demo Video](static/videos/renders.mp4)
+
+[![Demo Video](static/images/demo_thumbnail.png)](static/videos/renders.mp4)
+
 
 ## Citation
 If you find our code or paper helps, please consider giving us a star or citing:
