@@ -38,6 +38,7 @@ Thanks for your interest in our work. If you would like to access the source cod
 
 ## Demo Video
 See more in our [project website](https://rongliu-leo.github.io/universal-beta-splatting/).
+
 <video src="static/videos/renders.mp4" controls style="width:100%; max-width:1080px; display:block; margin:0 auto;">
     Your browser does not support the video tag.
 </video>
