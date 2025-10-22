@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded', domReady);
     let dicsDemo = null;
         function domReady() {
             dicsDemo = new Dics({
+                container: document.querySelectorAll('.b-dics.real-world')[0],
+                hideTexts: false,
+                textPosition: "bottom"
+            });
+            dicsDemo = new Dics({
                 container: document.querySelectorAll('.b-dics.demo')[0],
                 hideTexts: false,
                 textPosition: "bottom"
