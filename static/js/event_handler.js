@@ -38,18 +38,12 @@ document.addEventListener('DOMContentLoaded', domReady);
                         parts[parts.length - 2] = 'coffee_martini';
                         break;
                     case 1:
-                        parts[parts.length - 2] = 'cook_spinach';
-                        break;
-                    case 2:
                         parts[parts.length - 2] = 'cut_roasted_beef';
                         break;
-                    case 3:
-                        parts[parts.length - 2] = 'flame_salmon';
-                        break;
-                    case 4:
+                    case 2:
                         parts[parts.length - 2] = 'flame_steak';
                         break;
-                    case 5:
+                    case 3:
                         parts[parts.length - 2] = 'sear_steak';
                         break;
                 }
