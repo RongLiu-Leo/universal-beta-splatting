@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', domReady);
+    let dicsRealWorld = null;
     let dicsStatic = null;
     let dicsDynamic = null;
     let dicsDemo = null;
         function domReady() {
-            dicsDemo = new Dics({
+            dicsRealWorld = new Dics({
                 container: document.querySelectorAll('.b-dics.real-world')[0],
                 hideTexts: false,
                 textPosition: "bottom"
@@ -62,7 +63,7 @@ document.addEventListener('DOMContentLoaded', domReady);
                     scene_list[i].children[0].className = "nav-link"
                 }
             }
-            dicsDemo.medias = dicsDemo._getMedias();
+            dicsRealWorld.medias = dicsRealWorld._getMedias();
         }
 
         function demoVideoEvent(idx) {
