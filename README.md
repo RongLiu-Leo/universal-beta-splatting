@@ -30,19 +30,8 @@
     <p>UBS achieves superior angular-spatial rendering of reflective and specular materials in static scenes (left) and maintains high-fidelity temporal-spatial reconstruction in dynamic volumetric scenes (right), avoiding the blurring artifacts of 3DGS and 4DGS.</p>
   </div>
 
-## Abstract
-*We introduce Universal Beta Splatting (UBS), a unified framework that generalizes 3D Gaussian Splatting to N-dimensional anisotropic Beta kernels for explicit radiance field rendering. Unlike fixed Gaussian primitives, Beta kernels enable controllable dependency modeling across spatial, angular, and temporal dimensions within a single representation. Our unified approach captures complex light transport effects, handles anisotropic view-dependent appearance, and models scene dynamics without requiring auxiliary networks or specific color encodings. UBS maintains backward compatibility by approximating to Gaussian Splatting as a special case, guaranteeing plug-in usability and lower performance bounds. The learned Beta parameters naturally decompose scene properties without explicit supervision: spatial (surface vs. texture), angular (diffuse vs. specular), and temporal (static vs. dynamic). Our CUDA-accelerated implementation achieves real-time rendering while consistently outperforming existing methods across static, view-dependent, and dynamic benchmarks, establishing Beta kernels as a scalable universal primitive for radiance field rendering.*
-
-## Code Access
-Thanks for your interest in our work. If you would like to access the source code or reproduction materials, please contact our corresponding author, [Zhongpai Gao](https://sites.google.com/site/gaozhongpai/home), for further information and permissions.
-
-## Demo Video
-See more in our [project website](https://rongliu-leo.github.io/universal-beta-splatting/).
-
-
-
-https://github.com/user-attachments/assets/39c6a1b2-5afb-4dc7-b6bd-0cb84a17abfa
-
+## About
+This is the repository that contains source code for the [Universal Beta Splatting](https://rongliu-leo.github.io/universal-beta-splatting/) website, based on [Nerfies](https://github.com/nerfies/nerfies.github.io), [Neuralangelo](https://research.nvidia.com/labs/dir/neuralangelo/), [Deformable Beta Splatting](https://rongliu-leo.github.io/beta-splatting/), [AtomGS](https://rongliu-leo.github.io/AtomGS/), and [ArxSite](https://github.com/RongLiu-Leo/arxsite).
 
 
 ## Citation
